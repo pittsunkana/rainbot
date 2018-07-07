@@ -1,0 +1,10 @@
+version: '2.1'
+services:
+  db:
+    image: postgres:latest
+    ports:
+      - "45431:5432"
+    volumes:
+      - db:/var/lib/postgresql/data
+volumes:
+  db:
